@@ -366,6 +366,73 @@ h3 {
   padding: clamp(28px, 5vw, 48px);
 }
 
+.publication-list {
+  display: grid;
+  gap: 22px;
+}
+
+.publication-year ul {
+  display: grid;
+  gap: 18px;
+  padding-left: 20px;
+  margin: 0;
+  color: var(--muted);
+  word-break: keep-all;
+}
+
+.publication-year li::marker {
+  color: var(--rose-dark);
+}
+
+.publication-card {
+  display: grid;
+  grid-template-columns: minmax(280px, 1fr) minmax(220px, 0.42fr);
+  gap: clamp(24px, 5vw, 58px);
+  align-items: center;
+}
+
+.publication-year em,
+.publication-card p {
+  color: var(--muted);
+  word-break: keep-all;
+}
+
+.publication-year em,
+.publication-card em {
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 1.08rem;
+}
+
+.award-box {
+  display: grid;
+  gap: 8px;
+  border: 1px solid rgba(164, 111, 118, 0.24);
+  border-radius: 24px;
+  padding: 24px;
+  background: rgba(244, 229, 226, 0.68);
+}
+
+.award-box span {
+  color: var(--rose-dark);
+  font-family: var(--serif);
+  font-size: 0.92rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.award-box strong {
+  font-family: var(--serif);
+  font-size: clamp(1.6rem, 3vw, 2.3rem);
+  font-weight: 500;
+  line-height: 1.08;
+}
+
+.award-box p {
+  margin-bottom: 0;
+}
+
 .education-list {
   display: grid;
   gap: 18px;
@@ -440,6 +507,7 @@ h3 {
   .split-section,
   .two-columns,
   .timeline-item,
+  .publication-card,
   .footer {
     grid-template-columns: 1fr;
   }
